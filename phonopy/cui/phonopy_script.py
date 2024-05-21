@@ -1013,7 +1013,7 @@ def run_calculation(phonon: Phonopy, settings, plot_conf, log_level):
             if plot_conf["save_graph"]:
                 plot.savefig("band.pdf")
             else:
-                plot.show()
+                plot.close()
 
     #
     # mesh sampling
